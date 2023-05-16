@@ -3,13 +3,7 @@ class Stack:
     def __init__(self):
         self.__data = []
 
-    @staticmethod
-    def __is_integer(item):
-        if not isinstance(item, int):
-            raise ValueError(f"Недопустимый тип данных '{item.__class__.__name__}', ожидался 'int'")
-
-    def push(self, item: int):
-        self.__is_integer(item)
+    def push(self, item):
         self.__data.append(item)
 
     def pop(self):
