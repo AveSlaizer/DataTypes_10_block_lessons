@@ -39,6 +39,8 @@ class LinkedList:
         return item
 
     # remove_last() - удаляет и возвращает последний элемент
+
+    # FIXME: При удалении последнего элемента списка возвращается None
     def remove_last(self):
         if self.__head.link is None:
             self.remove_first()
