@@ -19,13 +19,14 @@ class PriorityQueue:
 
     # for checking if the queue is empty
     def is_empty(self):
-        pass
+        return not self.__queue
 
     # for inserting an element in the queue
     def insert(self, item, priority):
-        pass
+        self.__queue.append(Entry(item, priority))
+        self.__queue.sort()
 
     # for popping an element based on max priority
     def delete(self):
-        pass
+        return self.__queue.pop().item
 
