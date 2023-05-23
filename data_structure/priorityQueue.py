@@ -26,6 +26,7 @@ class PriorityQueue:
 
     # for inserting an element in the queue
     def insert(self, item, priority):
+
         self.__queue.append(Entry(item, priority))
         self.__queue.sort()
 
