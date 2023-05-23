@@ -9,6 +9,9 @@ class Entry:
     def __gt__(self, other):
         pass
 
+    def __str__(self):
+        return f"<Значение {self.item}; Приоритет {self.priority}>"
+
 
 class PriorityQueue:
     def __init__(self):
